@@ -1,10 +1,10 @@
-### Initializes the Data Layer:
+#### Initializes the Data Layer:
 This ensures that window.dataLayer exists even before GTM loads.
 ```javascript
 window.dataLayer = window.dataLayer || [];
 ```
 
-### Generates Unique IDs:
+#### Generates Unique IDs:
 This function creates a unique identifier for each event, using crypto.randomUUID() if available, or a fallback method.
 ```javascript
 function generateUUID() {
@@ -15,7 +15,7 @@ function generateUUID() {
 }
 ```
 
-### Stores Events in Session Storage:
+#### Stores Events in Session Storage:
 This function captures each event and saves it in the browser’s sessionStorage, which can be useful for debugging or later retrieval.
 ```javascript
 function storeEvent(eventName, eventData) {
@@ -34,7 +34,7 @@ function storeEvent(eventName, eventData) {
 }
 ```
 
-### Runs Once the DOM Is Ready:
+#### Runs Once the DOM Is Ready:
 The script waits until the DOM is loaded before running, ensuring that elements like document.title are available.
 ```javascript
 document.addEventListener("DOMContentLoaded", function() {
