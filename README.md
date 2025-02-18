@@ -1,7 +1,3 @@
-# dl-steps
-
-## What the Script Does
-
 ### Initializes the Data Layer:
 This ensures that window.dataLayer exists even before GTM loads.
 ```javascript
